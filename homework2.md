@@ -15,11 +15,15 @@
 Hi, although you did provide an example of ls or ll, you did not provide examples of touch, mv and rm. Please update Q1 so that it includes at least these operations. 
 Thank you. :)
 	
-2. Ryan wants to subset the "clinicaltrial" matrix which consists of numerical indices listing patients age, weight and height in columns (columns 1-3, respectively) and patient names in rows. How would Ryan subset the clinicaltrial matrix to observe only patient weight and height?
+2.a. Ryan wants to subset the "clinicaltrial" matrix which consists of numerical indices listing patients age, weight and height in columns (columns 1-3, respectively) and patient names in rows. How would Ryan subset the clinicaltrial matrix to observe only patient weight and height?
 
 	**Answer: `clinicaltrial[ , c(2:3)]** or **clinicaltrial[ , c("weight","height")]** `   
 	#Answer Key: Include matrix name followed by single brackets. The weight and height columns (2:3) are indicated by ,c(2:3) or defined by their character names. 
-	
+
+2b. Next, Ryan converted the clinicaltrial matrix into a dataframe then added a fourth column for "bloodpressure". How would Ryan subset the clinicaltrial dataframe to observe patient's bloodpressure in a column format (not in a vector)?
+
+**Answer: clinicaltrial[, 4] or clinicaltrial['bloodpressure']** Note: clinicaltrial$bloodpressure or clinicaltrial[['bloodpressure']] would return a _vector_ listing blood pressure values.
+
 ### Q2 Comments:
 You addressed the issue of matrices only using both index names and index numbers. You didn't address data frames. So, you took a bit of Q2.1 and a bit of Q2.2 and mixed them rather than choosing one of the two and answering it fully. Please demonstrate some concepts of dealing with dataframe columns.
 
